@@ -19,7 +19,7 @@ var deleteLog = false;
           //once documnet is ready this method will ne call 
 
           afterRender: function(){
-            alert("The resulting DOM structure is ready");
+            //funtion will call when ever screen is reloaded
           },
           onLeave: function(index, nextIndex, direction){
             //after leaving section 2
