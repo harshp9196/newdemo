@@ -30,7 +30,81 @@ body {
   margin: 0 auto;
 }
 
+/* ----------------------------------------------- */
+/* local created Animations*/
+/* ----------------------------------------------- */
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 /* ----------------------------------------------- */
 /* :PRE-LODER -- IMG+MODAL DIALOG */
 /* ----------------------------------------------- */
@@ -127,16 +201,6 @@ body {
 }
 
 
-
-#section1 h1{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 30px;
-  color: #555;
-}
-
 #section2 .intro{
   position: absolute;
   left: 0;
@@ -164,6 +228,7 @@ nav {
   width: 100%;
   color: auto;
   position: absolute;
+  
 }
 
 .logo {
@@ -283,7 +348,145 @@ nav {
 ion-icon {
   font-size: 30px;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* ----------------------------------------------- */
+/* fOOTER */
+/* ----------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 12px; 
+  color: #000;
+  z-index: 1502;
+  text-align: center;
+}
+
+/* ----------------------------------------------- */
+/* Page One all Element Setup  */
+/* ----------------------------------------------- */
+.pg-1-all-text {
+  position: relative;
+  line-height: 1.714;
+  margin-bottom: 1.8rem;
+  margin-top: 1.8rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 18px;
+}
+.scroll-logo img {
+  
+  height: 100px;
+}
+.pg-1-all-text{
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  color: #555;
+}
+.pg-1-all-text-1{
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    top: 20%;
+    color: rgb(163, 160, 160);
+}
+.pg-1-all-text-1:after {
+  display: block;
+  height: 2px;
+  background-color: #33b5e5;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.pg-1-all-text-2{
+  top: 32%;
+  font-size: 35px;
+  color: #33b5e5;
+}
+.pg-1-all-text-3{
+  font-size: 35px;
+  top: 41%;
+  color: #33b5e5;
+}
+.pg-1-all-text-4{
+  top: 51%;
+  color: #33b5e5;
+}
+.pg-1-all-text-5{
+  top: 60%;
+  color: #ffffff;
+}     
+.pg-1-all-text-6{
+  top: 70%;
+  color: #33b5e5;
+}     
+
+/*Button Logic + animations of the Btn*/
+.btn--animated {
+  animation: moveInBottom .7s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all .2s;
+  position: relative;
+  font-size: 25px;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(24, 61, 224, 0.212);
+ }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+  }
+.btn:active, .btn:focus 
+{
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1px rgba(0, 0, 0, 0.2);
+ }
+
+.btn--white {
+  background-color: #33b5e5;
+  color: rgb(255, 255, 255); }
+  .btn--white::after {
+    background-color: #33b5e5; }
+.btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 25PX;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s; 
 }

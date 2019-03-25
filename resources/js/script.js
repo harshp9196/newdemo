@@ -47,20 +47,28 @@ var deleteLog = false;
   });
    //sticky nav on off logic 
    $('.sticky-close-btn').hide();
+//Load First Page animations on Modal s
+   $('.popup-btn').click(function () {
    
+    $('.btn--animated').css("animation","");
+    $('.btn--animated').css("animation-fill-mode","");
+   
+    $('.btn--animated').css("animation","moveInBottom 1s ease-out 1s");
+    $('.btn--animated').css("animation-fill-mode","backwards");
+   });
+   
+    /* Scroll on buttons */
+   $('.sticky-nav-on').click(function () {
+     $('.sticky').css("width","400px");
+     $('.sticky-close-btn').show();
+     $('#pp-nav').hide();  
+    });
 
-      /* Scroll on buttons */
-      $('.sticky-nav-on').click(function () {
-        $('.sticky').css("width","400px");
-        $('.sticky-close-btn').show();
-        $('#pp-nav').hide();  
-     });
-
-     $('.sticky-close-btn').click(function () {
+ $('.sticky-close-btn').click(function () {
       $('.sticky').css("width","0");
       $('.sticky-close-btn').hide();
       setTimeout('$("#pp-nav").show()',500);
-      });
+    });
    
    
 });

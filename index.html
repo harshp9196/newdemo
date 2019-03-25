@@ -4,15 +4,15 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/jquery.pagepiling.css">
-       
-        
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-
-        
         <title>Meet Demo</title>
+        <script>
+          var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings'
+          });
+        </script>
     </head>
-    <body>
-      
+    <body>   
         <div class="preload-img" id="#preload-img"></div>
     
     
@@ -24,8 +24,7 @@
                           <h2 class="modal-title">Disclaimer</h2>
                         </div>
                         <div class="modal-body">
-                                <p class="p_content">
-                                    We are currently in the process of revising our website in consonance with the Real Estate (Regulation and Development) Act, 2016 and the Rules made there under (“RERA”), which have been brought into effect from 1st May, 2017. </p>
+                                <p class="p_content"> We are currently in the process of revising our website in consonance with the Real Estate (Regulation and Development) Act, 2016 and the Rules made there under (“RERA”), which have been brought into effect from 1st May, 2017. </p>
                         
                                 <p class="p_content"> Until our website is duly revised and updated, none of the images, material, stock photography, projections, details, descriptions and other information that are currently available and/or displayed on the website, should be deemed to be or constitute advertisements, solicitations, marketing, offer for sale, invitation to offer, invitation to acquire, including within the purview of the RERA.</p>
         
@@ -45,12 +44,36 @@
                
 
        <!-- page pilling  API with Call backPredefine Functions -->
-       <div style="position:fixed;top:50px;left:50px;color:white;z-index:999;" id="callbacksDiv"></div>
+      
       
            <div id="pagepiling">
 
                 <div class="section" id="section1">
-                    <h1> </h1>
+                  <div class="row text-center">
+                    <div class="col">
+                      <div class="row ">
+                         <p class="pg-1-all-text  pg-1-all-text-1">About the us </p> 
+                      </div>
+                      <div class="row typed-strings">
+                          <p class="pg-1-all-text pg-1-all-text-2">In order to buid tommrow </p>
+                          <p class="pg-1-all-text pg-1-all-text-3">You must start  yesterday</p>
+                          <span id="typed"></span>
+                          </div>
+                      <div class="row">
+                        <p class="pg-1-all-text pg-1-all-text-4">tommrow isnot BUID IN A DAY ,IT TAKS YEARS </p>    
+                      </div>
+                      <div class="row">
+                        <div class="pg-1-all-text pg-1-all-text-5 ">
+                         <a href="about.html" class="btn btn--white btn--animated">Read More</a>
+                        </div>
+                        </div>
+                      <div class="row ">
+                        <div class="scroll-logo pg-1-all-text-6 pg-1-all-text ">
+                             <img src="resources/img/scroll.gif" class="scroll-img" alt="scroll-logo">
+                        </div>
+                      </div>
+                     </div>
+                  </div>
                 </div>
         
                 <div class="section" id="section2">
@@ -139,9 +162,16 @@
  
       </div>
                     </nav>
+
+
+                    <div class="footer">
+                        <p>
+                          Copyright &copy; 2019 by this . All rights reserved.
+                        </p>
+                      </div>
   </header>
   
-
+ 
 
 
 
@@ -152,6 +182,7 @@
 
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="vendors/js/typed.min.js"></script>
     <script src="resources/js/script.js"></script>
     <script src="vendors/js/bootstrap.min.js"></script>
     <script src="vendors/js/jquery.pagepiling.js"></script>
