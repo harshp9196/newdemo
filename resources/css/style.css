@@ -19,12 +19,14 @@ body {
     height: 0;
     visibility: hidden;
 }
+::-moz-selection {
+    background-color: #0b0469;
+    color: #fff;
+}
 ::selection {
     background-color: #0b0469;
     color: #fff;
 }
-
-
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -34,15 +36,31 @@ body {
 /* local created Animations*/
 /* ----------------------------------------------- */
 
-@keyframes moveInBottom {
+@-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(3rem);
     transform: translateY(3rem); }
   100% {
     opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
     transform: translate(0); } }
 
 /* The typing effect */
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -74,6 +92,22 @@ body {
   }
 }
 
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
 @keyframes type2 {
   0% {
     width: 0;
@@ -89,6 +123,17 @@ body {
     border: none;
   }
 }
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes type3 {
   0% {
     width: 0;
@@ -98,6 +143,11 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 @keyframes blink {
@@ -185,6 +235,7 @@ body {
 /* Defining each section background and styles
 * --------------------------------------- */
 #section1{
+  background : -webkit-gradient(linear,left top, left bottom,from(white),to(white));
   background : linear-gradient(white,white);
 }
 #section2{
@@ -252,6 +303,7 @@ nav {
   width: auto;
   margin-top: 40px;
   margin-right: 15px;
+  -webkit-transform: translateX(15%);
   transform: translateX(15%);
 }
 .main-nav li {
@@ -270,8 +322,10 @@ nav {
   top: 0;
   right:  0;
   width: 0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(233, 222, 222, 0.98);
+  -webkit-box-shadow: 0 5px 5px #efefef;
   box-shadow: 0 5px 5px #efefef;
   padding-top: 60px;
   z-index: 110;
@@ -283,6 +337,7 @@ nav {
   font-size: 20px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -353,9 +408,9 @@ ion-icon {
 /* ----------------------------------------------- */
 .footer {
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
   width: 100%;
-  height: 12px; 
+  height: 5px; 
   color: #000;
   z-index: 1502;
   text-align: center;
@@ -429,7 +484,9 @@ ion-icon {
 
 /*Button Logic + animations of the Btn*/
 .btn--animated {
+  -webkit-animation: moveInBottom .7s ease-out .75s;
   animation: moveInBottom .7s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
 .btn::after {
@@ -442,6 +499,7 @@ ion-icon {
     top: 0;
     left: 0;
     z-index: -1;
+    -webkit-transition: all .4s;
     transition: all .4s; }
 
 
@@ -451,6 +509,7 @@ ion-icon {
   padding: 10px 20px;
   display: inline-block;
   border-radius: 50px;
+  -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
   font-size: 25px;
@@ -458,18 +517,23 @@ ion-icon {
   cursor: pointer; }
 
 .btn:hover {
+  -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
   color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(24, 61, 224, 0.212);
   box-shadow: 0 5px 10px rgba(24, 61, 224, 0.212);
  }
   .btn:hover::after {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; 
   }
 .btn:active, .btn:focus 
 {
   outline: none;
+  -webkit-transform: translateY(-1px);
   transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.5rem 1px rgba(0, 0, 0, 0.2);
  }
 
@@ -488,5 +552,6 @@ ion-icon {
       top: 0;
       left: 0;
       z-index: -1;
+      -webkit-transition: all .4s;
       transition: all .4s; 
 }
