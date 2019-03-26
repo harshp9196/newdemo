@@ -334,8 +334,9 @@ nav {
 }
 
   .menu-btn {
+    color: #fff;
     display: none;
-    font-size: 100%;
+    font-size: 200%;
     height: 25px;
     float: right;
     margin-top: 20px;

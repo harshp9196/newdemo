@@ -33,8 +33,10 @@ var deleteLog = false;
             if(index == 1){
               $(".main-nav li a").css("color", "#555");
               $(".footer p").css("color", "#000");
+              $(".footer p").css("color", "#000");
             }else{
               $(".main-nav li a").css("color", "#f1f1f1");
+              $(".footer p").css("color", "#f1f1f1");
               $(".footer p").css("color", "#f1f1f1");
             }
             

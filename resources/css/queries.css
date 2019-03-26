@@ -34,8 +34,18 @@
       }
       
   .menu-btn {
+     
+      font-size: 200%;
     display: block;
     
+}
+.sticky-close-btn {
+    font-size: 80%;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 .sticky-nav-logo img {
     margin-left: 125px;
@@ -70,18 +80,16 @@
         bottom: 3%;
         color: #000;
         z-index: 102;
-        font-size: 55%;
+        font-size: 85%;
       }
       .btn, .btn:link, .btn:visited {
-        
         padding: 9px 25px;
-       
         border-radius: 50px;
         font-size: 20px;
       
     }
       .pg-1-all-text-5 {top: 68%;}
-    .pg-1-all-text-6 {top: 75%;}  
+      .pg-1-all-text-6 {top: 75%;}  
         
 }
 
