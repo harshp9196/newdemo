@@ -70,8 +70,10 @@ var deleteLog = false;
      $('.sticky-close-btn').show();
      $('#pp-nav').hide();  
     });
+
+
     $('.sticky-nav-on1').click(function () {
-      $('.sticky').css("width","100%");
+      $('.sticky').css("width","96%");
       $('.sticky-close-btn').show();
       $('#pp-nav').hide();  
      });
