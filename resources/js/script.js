@@ -20,6 +20,7 @@ var deleteLog = false;
 
           afterRender: function(){
             //funtion will call when ever screen is reloaded
+            $(".footer p").css("color", "#000");
           },
           onLeave: function(index, nextIndex, direction){
             //after leaving section 2
@@ -31,9 +32,12 @@ var deleteLog = false;
             //using index
             if(index == 1){
               $(".main-nav li a").css("color", "#555");
+              $(".footer p").css("color", "#000");
             }else{
               $(".main-nav li a").css("color", "#f1f1f1");
+              $(".footer p").css("color", "#f1f1f1");
             }
+            
       
           },
           navigation: {
@@ -63,7 +67,12 @@ var deleteLog = false;
      $('.sticky-close-btn').show();
      $('#pp-nav').hide();  
     });
-
+    $('.sticky-nav-on1').click(function () {
+      $('.sticky').css("width","100%");
+      $('.sticky-close-btn').show();
+      $('#pp-nav').hide();  
+     });
+ 
  $('.sticky-close-btn').click(function () {
       $('.sticky').css("width","0");
       $('.sticky-close-btn').hide();
