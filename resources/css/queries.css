@@ -39,6 +39,10 @@
     display: block;
     
 }
+.menu-btn a {
+     color: white;
+}
+
 .sticky-close-btn {
     font-size: 80%;
     position: absolute;
