@@ -55,30 +55,38 @@
     margin-left: 125px;
  }
 .logo {
-        height: 80px;
+        height: 89px;
         width: auto;
         margin-top: 10px;
     }
     .pg-1-all-text-1 {
         margin-bottom: 3.5px;
         font-size: 23px;
-        top: 11%;
+        top: 8%;
         font-size: 25px;
+        margin-left: 5px;
+    margin-right: 5px;
         color: rgb(163, 160, 160);
     }
     .pg-1-all-text-2 {
-        top: 23%;
+        top: 20%;
         font-size: 25px;
-        
+        margin-left: 5px;
+        margin-right: 5px;    
     }
     .pg-1-all-text-3 {
         font-size: 25px;
         top: 38%;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .pg-1-all-text-4 {
-        top: 55%;
-        color: #33b5e5;
-    }
+        top: 52%;
+        font-size: 15px;
+        top: 56%;
+        margin-left: 9px;
+        margin-right: 9px;
+        }
       .footer {
         position: absolute;
         bottom: 3%;

@@ -21,6 +21,7 @@ var deleteLog = false;
           afterRender: function(){
             //funtion will call when ever screen is reloaded
             $(".footer p").css("color", "#000");
+            $(".menu-btn a").css("color", "#000");
           },
           onLeave: function(index, nextIndex, direction){
             //after leaving section 2
