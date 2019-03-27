@@ -1,5 +1,5 @@
 /*
-Orange color: #33b5e5
+Color :#33b5e5
 
 */
 
@@ -7,7 +7,7 @@ Orange color: #33b5e5
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
-
+@import url('mixitpro.css');
 * {
     margin: 0;
     padding: 0;
@@ -274,7 +274,6 @@ header {
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
-
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #27b3e6;
@@ -293,9 +292,9 @@ header {
     font-size: 200%;
     color: #fff;
 }
-
-
-/* Sticky navi */
+/* ----------------------------------------------- */
+/*/* Sticky navi */*/
+/* ----------------------------------------------- */
 .sticky {
     position: fixed;
     top: 0;
@@ -581,6 +580,6 @@ footer p {
 }
 .sticky-social-list-left li {
   list-style: none;
- 
   display: inline-block;
 }
+*:focus {outline: none;}
