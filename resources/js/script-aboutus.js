@@ -11,12 +11,11 @@ $(document).ready(function() {
       $('.sticky-left').css("width","0");
 
 	  
-	  $('.js--nav-icon').click(function () {
-     $('.sticky-left').css("width","400px"); 
+	
     });
-      setTimeout('$("#pp-nav").show()',500);
-    });
-    
+    $('.js--nav-icon').click(function () {
+        $('.sticky-left').css("width","100%"); 
+       });
     $('.sticky-nav-on1').click(function () {
       $('.sticky').css("width","100%");
       $('.sticky-close-btn').show();
