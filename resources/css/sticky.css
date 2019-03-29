@@ -1,0 +1,120 @@
+
+/* ----------------------------------------------- */
+/*/* Sticky navi --TOp*/*/
+/* ----------------------------------------------- */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+
+
+/* ----------------------------------------------- */
+/* sticky--leftSide Bar */
+/* ----------------------------------------------- */
+.sticky-left  {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    right:  0;
+    width: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 5px 5px #ceeef8;
+    box-shadow: 0 5px 5px #ceeef8;
+    padding-top: 60px;
+    z-index: 110;
+  }
+   .menu-btn {
+      color: #fff;
+      display: none;
+      font-size: 200%;
+      height: 25px;
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px;
+      
+  }
+  
+  .sticky-left a {
+    padding: 10px 5px 5px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .sticky-close-btn-left {
+      font-size: 80%;
+      position: absolute;
+      top: 0;
+      right: 5px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  .sticky-nav-logo-left {
+    display: block;
+    width: 100%
+  }
+  .sticky-nav-logo-left img {
+    margin-left: 125px;
+    text-align: center;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    margin-right: 150px;
+  }
+  .list-link-left {
+    width: 100%;
+    margin-top: 60px;
+    max-height: calc(50vh - 100px);
+    overflow-y: auto;
+  }
+  .list-link-left li{
+    list-style: none;
+  }
+  .sticky-email-bar-left {
+    margin: 25px;
+  }
+  .sticky-email-bar-left a {
+    text-align: center;
+  }
+  
+  .sticky-detais-left {
+    margin: 5px 5px;
+  }
+  .sticky-detais-left span {
+    display: block;
+    text-align: center;
+    margin: 3px;
+  }
+  .sticky-social-list-left{
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .sticky-social-list-left li {
+    list-style: none;
+    display: inline-block;
+  }
+  *:focus {outline: none;}
