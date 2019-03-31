@@ -9,9 +9,6 @@ $('.sticky-nav-on--left').click(function () {
 });
 $('.sticky-close-btn-left').click(function () {
   $('.sticky-left').css("width","0");
-
-  
-
 });
 
 
