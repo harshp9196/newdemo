@@ -12,7 +12,7 @@ var deleteLog = false;
   	$('#pagepiling').pagepiling({
      
       menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 			    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
 			    loopTop: true,
           loopBottom: true,
@@ -47,7 +47,7 @@ var deleteLog = false;
             'textColor': '#f2f2f2',
             'bulletsColor': '#ccc',
             'position': 'right',
-            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
         }
 
         
