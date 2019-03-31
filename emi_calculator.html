@@ -83,20 +83,21 @@
                 <h2>EMI CALCULATOR  </h2>
                 </div>
             </div>
-            <div class="container">
-                    <div class="row intro">
-                            <div class="col-md-3 intro">
+    <!-- LOAN AMOUNT AREA -->
+            <div class="container padding-fixer">
+                    <div class="row margin-fixer">
+                            <div class="col-md-3 padding-fixer">
                                 <p> <strong>Loan Amount</strong> </p>
                             </div>
-                            <div class="col-md-3">
-                                   <input type="text" name="" id="abc"> <span class="rs">₹</span>
+                            <div class="col-md-9 padding-fixer input-text-fixer">
+                                   <input type="text" id="loan-text" value="500000" class="input-text"> <span class="rs">₹</span>
                             </div>
                          
                        </div> 
-                <div class="row ">
-                     <div class="col-md-12 bar">
+                <div class="row">
+                     <div class="col-md-12 padding-fixer">
                             <div class="range-slider">
-                                    <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                                    <input class="" type="range" value="500000" id="loan-amount-slider" min="0" max="20000000">
                                     <span class="tick" style="left: 0%;">|<br/>
                                         <span class="marker">0</span></span> <span class="tick hidden-xs" style="left: 12.5%;">|<br/>
                                         <span class="marker">25L</span></span> <span class="tick" style="left: 25%;">|<br/>
@@ -106,13 +107,39 @@
                                         <span class="marker">125L</span></span> <span class="tick" style="left: 75%;">|<br/>
                                         <span class="marker">150L</span></span> <span class="tick hidden-xs" style="left: 87.5%;">|<br/>
                                         <span class="marker">175L</span></span> <span class="tick" style="left: 100%;">|<br/>
-                                        <span class="marker">200L</span></span></div>
+                                        <span class="marker">200L</span></span>
+                                </div>
                             </div>
                      </div>
-                   
-                  
-                </div>          
-            </div>
+            </div>   
+    <!-- INTREST AREA -->
+            
+       
+    <div class="container padding-fixer-top padding-fixer">
+        <div class="row margin-fixer">
+                <div class="col-md-3 padding-fixer">
+                    <p> <strong>Interest Rate</strong> </p>
+                </div>
+                <div class="col-md-9 padding-fixer input-text-fixer">
+                       <input type="text" id="intrest-rate-text" value="10.5" class="input-text"> <span class="rs">%</span>
+                </div>
+        </div> 
+    <div class="row">
+         <div class="col-md-12 padding-fixer">
+                <div class="range-slider">
+                        <input class="" type="range" value="10.5" id="intrest-rate-slider" min="5" max="20">
+                         <span class="tick" style="left: 0%;">|<br/>
+                            <span class="marker">5</span></span> <span class="tick" style="left: 16.67%;">|<br/>
+                            <span class="marker">7.5</span></span> <span class="tick" style="left: 33.34%;">|<br/>
+                            <span class="marker">10</span></span> <span class="tick" style="left: 50%;">|<br/>
+                            <span class="marker">12.5</span></span> <span class="tick" style="left: 66.67%;">|<br/>
+                            <span class="marker">15</span></span> <span class="tick" style="left: 83.34%;">|<br/>
+                            <span class="marker">17.5</span></span> <span class="tick" style="left: 100%;">|<br/>
+                            <span class="marker">20</span></span></div>
+                    </div>
+                </div>
+         </div>
+    </div>   
                   
             
         </section>
@@ -135,9 +162,7 @@
     <script src="resources/js/emi-cal.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 
-    <script>
-            $(document).foundation();
-          </script>
+
     </body>  
     
 </html>
