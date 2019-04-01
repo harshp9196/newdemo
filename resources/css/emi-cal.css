@@ -28,13 +28,34 @@ body {
     height: 0;
     visibility: hidden;
 }
-
+h4 {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 10px;
+}
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
+.btn-primary,.btn-active {
+    color: #fff ;
+    background: #27b3e6
+}
 .section-cal {
     padding-top: 20px;
     margin-bottom: 25px;
+}
+.active {
+    display: inline-block;
+}
+.height-fixer {
+    height: 100px;
+}
+
+.height-fixer1 {
+    height: 33px;
+}
+.disable {
+    display: inline-block;
 }
 .padding-fixer {
     padding: 2px 0;
