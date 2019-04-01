@@ -29,7 +29,8 @@ body {
     visibility: hidden;
 }
 h4 {
-    font-size: 20px;
+    padding: 10px 10px 2px 2px;
+    font-size: 25px;
     color: rgb(2, 154, 255);
 }
 .text-center {
@@ -37,6 +38,13 @@ h4 {
 }
 .border-class {
     border: 1px solid #ccc;
+  
+}
+
+.border-class1 {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px #2547a7;
+        margin: 10px 5px;
 }
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -82,6 +90,7 @@ section {
 .box {
     padding: 1%;
 }
+
 /*scroll-bar override*/
 
 ::-webkit-scrollbar {
@@ -308,6 +317,7 @@ input[type="range"]::-ms-fill-upper {
     text-align: right;
 }
 .input-text {
+    -webkit-rtl-ordering: logical;
     text-align: right;
     border: none;
     border-bottom: 3px solid #33b5e5;

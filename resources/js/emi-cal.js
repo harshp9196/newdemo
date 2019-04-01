@@ -55,10 +55,14 @@ $(document).ready(function() {
     
     //loan-tenure-month-slider
     $("#loan-tenure-month-text").val( $("#loan-tenure-month-slider").val());
+    
+    callAndSetAll();  
+  
+    
+
+   
   })
-   //set and get values on slider 
-  
-  
+   
   
    $("input[type='text']").change(function() {
       //loan-amont  
@@ -69,7 +73,83 @@ $(document).ready(function() {
     $("#loan-tenure-year-slider").val($("#loan-tenure-year-text").val());
     $("#loan-tenure-month-slider").val($("#loan-tenure-month-text").val());
     
+    callAndSetAll();
+    
   })
+
+
+  function calEmi(p,r,t) {
+    // E = (P.r.(1+r)n) / ((1+r)n – 1)
+    // Here,
+    // P = loan amount i.e principal amount
+    // R = Interest rate per month
+    // T = Loan time period in year
+  
+    var emi;
+    r = r / (12 * 100); // one month interest 
+    emi = (p * r * Math.pow(1 + r, t))  / (Math.pow(1 + r, t) - 1); 
+    Math.round(emi);
+    $("#loan-emi").text(Math.round(emi));
+   var total= calTotalPayable(emi , t) ;
+     var intrest=calInterestPayable(total,p);
+     setPiechart(p,total);
+     return (emi); 
+  }
+  
+  function calInterestPayable(emi,p) {
+   var intrest= emi-p
+    $("#loan-intrest").text(Math.round(intrest));
+    return (intrest);  
+  }
+
+  function calTotalPayable(emi,t) {
+    var totalAmount=emi*t;
+    $("#loan-total-payable").text(Math.round(totalAmount));
+    return (totalAmount);  
+  }
+  function callAndSetAll() {
+      
+    var t = $('.btn-year');
+    var t1 = $('.btn-month');
+         
+      if (t.hasClass('btn-primary')) {   
+        var tenure=$("#loan-tenure-year-slider").val();
+        tenure = tenure * 12; 
+        
+        calEmi($("#loan-text").val(), $("#intrest-rate-text").val(),tenure);
+        }
+      if (t1.hasClass('btn-primary')) {
+            calEmi($("#loan-text").val(), $("#intrest-rate-text").val(),$("#loan-tenure-month-slider").val());
+          }
+  }
+function setPiechart(p,total)
+   {
+     var a=(p*100)/total;
+     var b= 100- a.toFixed(1);
+
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'pie',
+
+        // The data for our dataset
+        data: {
+        labels: ['Total Interest', 'Principal Loan Amount'],
+        datasets: [{
+            label: 'Total Payment',
+            backgroundColor: [
+                '#0cb7b1',
+                '#0053a0'
+            ],
+            borderColor: '#caeaf9',
+            data: [b,a.toFixed(1)]
+        }]
+        },
+
+        // Configuration options go here
+        options: {}
+});
+   }
 
 });
 
