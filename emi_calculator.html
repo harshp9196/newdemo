@@ -208,8 +208,8 @@
                        </div>
                    </div>
                    <div class="col-md-6">
-                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                   </div>
+                        <canvas id="myChart"></canvas>
+                    </div>
 
                </div>
            </div>
@@ -232,36 +232,30 @@
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="resources/js/emi-cal.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
-            window.onload = function () {
-            alert();
-            var options = {
-                title: {
-                    text: "Totaly Payment"
-                },
-                subtitles: [{
-                    text: ""
-                }],
-                animationEnabled: true,
-                data: [{
-                    type: "pie",
-                    startAngle: 40,
-                    toolTipContent: "<b>{label}</b>: {y}%",
-                    showInLegend: "true",
-                    legendText: "{label}",
-                    indexLabelFontSize: 16,
-                    indexLabel: "{label} - {y}%",
-                    dataPoints: [
-                        { y: 3.32, label: "Total Intrest" },
-                        { y: 4.03, label: "Principal amount" }
-                    ]
-                }]
-            };
-            $("#chartContainer").CanvasJSChart(options);
-            
-            }
+           var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'pie',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: 'rgb(33, 99, 132)',
+            data: [60, 40]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
             </script>
 
     </body>  
