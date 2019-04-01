@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  calEmi(500000,10,120);
   $(".range-slider-month").hide();
   $("#loan-tenure-month-text").hide();
   
@@ -124,8 +125,8 @@ $(document).ready(function() {
   }
 function setPiechart(p,total)
    {
-     var a=(p*100)/total;
-     var b= 100- a.toFixed(1);
+     var a = ((p*100)/total);
+     var b= 100- (a.toFixed(1));
 
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
@@ -134,7 +135,7 @@ function setPiechart(p,total)
 
         // The data for our dataset
         data: {
-        labels: ['Total Interest', 'Principal Loan Amount'],
+        labels: ['Principal Loan Amount', 'Total Interest'],
         datasets: [{
             label: 'Total Payment',
             backgroundColor: [
@@ -142,7 +143,7 @@ function setPiechart(p,total)
                 '#0053a0'
             ],
             borderColor: '#caeaf9',
-            data: [b,a.toFixed(1)]
+            data: [a.toFixed(1),b]
         }]
         },
 
