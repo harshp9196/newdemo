@@ -244,22 +244,20 @@ nav {
   height: auto;
   width: 100%;
   color: auto;
-  position: absolute;
-  
+  position: absolute; 
 }
-
 .logo {
   height: 150px;
-  width: 150px;
+  width: auto;
   float: left;
-  margin-top: 20px;
+  margin-top: -12px;
 }
 .logo-black { 
   display: none;
-  height: 50px;
+  height: 150px;
   width: auto;
   float: left;
-  margin: 5px 0;
+  margin-top: -12px;
 }
 
 /* Main navi */
@@ -340,11 +338,9 @@ nav {
   width: 100%
 }
 .sticky-nav-logo img {
-  text-align: center;
-  width: auto;
-  margin-top: 2px;
+  margin-top: -15px;
   margin-bottom: 8px;
-  margin-left: 150px;
+  margin-left: 40px;
   margin-right: 150px;
 }
 .list-link {
