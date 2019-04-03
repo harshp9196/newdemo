@@ -29,22 +29,24 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     .modal-dialog {
-        font-weight: 300;
         position: absolute;
-        top:2%;
-       }
+        top: 25%;
+        }
     .main-nav {
         display: none;
       }
-      
+      .popup-body {
+        font-size: 10% !important;
+        max-height: 250px
+    }
       .popup-btn {
           padding: 0 0 !important;
       }
       .popup-footer {
-        padding: 7px;
+        padding: 5px;
       }
       .popup-header {
-        padding: 7px;
+        padding: 5px;
       }
   .menu-btn {
      
