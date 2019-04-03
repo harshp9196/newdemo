@@ -128,7 +128,9 @@ body.modal-open > :not(.modal) {
 .section{
   text-align:center;
 }
-
+.item img {
+  height: 100vh !important;
+}
 
 /* Backgrounds will cover all the section
 * --------------------------------------- */
@@ -146,15 +148,15 @@ body.modal-open > :not(.modal) {
 }
 #section2{
   background-image: url(img/2.jpg);
-  
 }
 #section3{
   background-image: url(img/3.jpg);
- 
 }
 #section4 {
-  background-image: url(img/4.jpg);
- 
+  background-image: url(img/4.jpg); 
+}
+#ab {
+  background: #33b5e5;
 }
 
 
