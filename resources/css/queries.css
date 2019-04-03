@@ -30,14 +30,15 @@
 @media only screen and (max-width: 480px) {
     .modal-dialog {
         position: absolute;
-        top: 25%;
+        top: 8%;
+        bottom: 10%;
         }
     .main-nav {
         display: none;
       }
       .popup-body {
         font-size: 10% !important;
-        max-height: 250px
+        max-height: 350px
     }
       .popup-btn {
           padding: 0 0 !important;
