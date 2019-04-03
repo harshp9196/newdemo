@@ -30,7 +30,7 @@
 @media only screen and (max-width: 480px) {
     .modal-dialog {
         position: absolute;
-        top: 8%;
+        top: 4%;
         bottom: 10%;
         }
     .main-nav {
