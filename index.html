@@ -2,21 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/jquery.pagepiling.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <title>Shanti Real Group</title>
+        <link rel="stylesheet" type="text/css" href="vendors/css/jquery.pagepiling.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/hover/hover.css">
         
+        <title>Shanti Real Group</title>        
     </head>
     <body>   
+      <!-- PRE LOADER -->
         <div class="preload-img" id="#preload-img"></div>
     
     
-            <div id="myModal" class="modal fade" role="dialog">
+            <div id="myModal" class="modal fade" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                       <!-- Modal content-->
                       <div class="modal-content">
@@ -35,7 +35,7 @@
                                <p class="p_content"> We thank you for your patience and understanding.”</p>    
                         </div>
                         <div class="modal-footer popup-footer">
-                          <button type="button" class="popup-btn" data-dismiss="modal">Accept</button>
+                          <button type="button" class="btn btn--white popup-btn" data-dismiss="modal">Accept</button>
                         </div>
                       </div>
                   
@@ -122,14 +122,14 @@
                 <img src="resources/img/logo.png" alt="logo" class="logo-black">
                   <ul class="main-nav">
 
-                        <li><a href="#"><ion-icon name="call"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="mail"></ion-icon></a></li>
+                        <li><a href="#" class="call"><ion-icon name="call"></ion-icon></a></li>
+                        <li><a href="#" class="mail"><ion-icon name="mail"></ion-icon></a></li>
                         
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" class="insta"><ion-icon name="logo-instagram"></ion-icon></a></li>
                       
-                        <li><a href="#"><ion-icon name="people"></ion-icon></a></li>
+                        <li><a href="#" class="people"><ion-icon name="people"></ion-icon></a></li>
                          
                         <li><a href="#"  class="sticky-nav-on"><ion-icon name="menu"></ion-icon></a></li>  
                     
@@ -180,24 +180,16 @@
                 </div>
                 <div class="sticky-social-list">
                     <ul>
-                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#" class="insta"><ion-icon name="logo-instagram"></ion-icon></a></li>
                     </ul>
                 </div>  
             </div>
-
-
-
-
-
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="resources/js/script.js"></script>
     <script src="vendors/js/bootstrap.min.js"></script>
     <script src="vendors/js/jquery.pagepiling.js"></script>
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-
- 
-   
 </html>

@@ -1,0 +1,24 @@
+
+.facebook :hover {
+    color: blue !important;
+}
+.twitter :hover {
+    color: rgb(84, 188, 236) !important;
+}
+.insta :hover {
+    color: rgba(255, 153, 0, 0.541) !important;
+    
+}
+.call :hover {
+   color: aquamarine !important; 
+}
+
+.mail :hover {
+    color: red !important; 
+ }
+ .people :hover {
+    color: blue !important; 
+ }
+ .toggle-btn {
+    color: gainsboro !important;
+ }

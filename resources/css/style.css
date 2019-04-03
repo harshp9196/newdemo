@@ -21,18 +21,20 @@ body {
     visibility: hidden;
 }
 ::-moz-selection {
-    background-color: #0b0469;
+    background-color: #2795df;
     color: #fff;
 }
 ::selection {
-    background-color: #0b0469;
+    background-color: #2795df;
     color: #fff;
 }
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+body.modal-open > :not(.modal) {
+  opacity: 0.9;
+}
 /* ----------------------------------------------- */
 /* local created Animations*/
 /* ----------------------------------------------- */
@@ -85,9 +87,10 @@ body {
 }
 .popup-btn {
     color: white;
+    font-size: 80% !important;
     font-weight: normal;
     width: 100px;
-    height: 50px;
+    height: 45px;
     text-decoration: none;
     border: none;
     outline: none;
@@ -272,10 +275,13 @@ nav {
 .main-nav li {
   display: inline-block;
   margin-left: 35px;
-
 }
-.main-nav li a:hover {
-  color: #555;
+
+.main-nav li a:visited {
+  color: #000;
+}
+.main-nav li a:visited {
+  color: #000;
 }
 /*Sticky-nav-bar */
 .sticky  {
@@ -317,7 +323,7 @@ nav {
   font-size: 30px; 
 }
 .sticky a:hover {
-  font-size: 30px;
+  font-size: 25px;
   color: #60a6df;
 }
 .sticky-close-btn {
@@ -371,7 +377,6 @@ nav {
 }
 .sticky-social-list li {
   list-style: none;
- 
   display: inline-block;
 }
 
