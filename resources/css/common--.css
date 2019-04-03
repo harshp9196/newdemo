@@ -1,11 +1,15 @@
-/* ----------------------------------------------- */
-/* color:#33b5e5 */
-/* ----------------------------------------------- */
-@import url("sticky.css");
-@import url("common1.css");
-@import url("system1.css");
+/*
+Color :#33b5e5
+
+*/
 
 
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+@import url('career.css');
+@import url('sticky.css');
 
 * {
     margin: 0;
@@ -13,6 +17,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 html,
 body {
     background-color: #fff;
@@ -23,7 +28,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-*:focus {outline: none;}
+
 .clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
@@ -32,69 +37,17 @@ body {
     height: 0;
     visibility: hidden;
 }
-h4 {
-    padding: 10px 10px 2px 2px;
-    font-size: 25px;
-    color: rgb(2, 154, 255);
-}
-.text-center {
-    text-align: center;
-}
-.border-class {
-    border: 1px solid #ccc;
-  
-}
 
-.border-class1 {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px #2547a7;
-        margin: 10px 5px;
-}
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-.btn-primary,.btn-active {
-    color: #fff ;
-    background: #27b3e6
-}
-.section-cal {
-    padding-top: 20px;
-    margin-bottom: 25px;
-}
-.active {
-    display: inline-block;
-}
-.height-fixer {
-    height: 100px;
-}
-
-.height-fixer1 {
-    height: 33px;
-}
-.disable {
-    display: inline-block;
-}
-.padding-fixer {
-    padding: 2px 0;
-}
-.padding-fixer-top {
-    padding-top: 30px;
-}
-.margin-fixer {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.margin-fixer-container {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
 section {
     padding: 80px 0;
 }
+
 .box {
     padding: 1%;
 }
-
 /*scroll-bar override*/
 
 ::-webkit-scrollbar {
@@ -104,10 +57,6 @@ section {
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
     background: #33b5e5;
-}
-.text-center {
-    text-align: center;
-    vertical-align: middle;
 }
 
 /* ----- HEADINGS ----- */
@@ -149,6 +98,7 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
 }
+
 /* ----- PARAGRAPHS ----- */
 .long-copy {
     line-height: 145%;
@@ -191,6 +141,71 @@ h2:after {
     vertical-align: middle;
     margin-top: -5px;
 }
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    
+   /* padding-bottom: 1px;
+    border-bottom: 1px solid #27b3e6;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+	*/
+}
+
+a:hover,
+a:active {
+   /* color: #27b3e6;
+    border-bottom: 1px solid transparent;*/
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #27b3e6;
+    border: 1px solid #27b3e6;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #27b3e6;
+    color: #27b3e6;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #27b3e6;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #27b3e6;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #27b3e6;
+    color: #fff;
+}
+
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -275,96 +290,174 @@ header {
 }
 
 /* ----------------------------------------------- */
-/* Section--1 Rnge  */
+/* HOW IT WORKS SECTION */
 /* ----------------------------------------------- */
-/*Chrome*/
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type='range'] {
-      overflow: hidden;
-      width: 100%;
-      -webkit-appearance: none;
-      background-color: #d3d3d3;
-    }
-    
-    input[type='range']::-webkit-slider-runnable-track {
-      height: 25px; /* Specified height */
-      -webkit-appearance: none;
-      color: #33b5e5;
-      margin-top: -1px;
-    }
-    
-    input[type='range']::-webkit-slider-thumb {
-       width: 15px; /* Set a specific slider handle width */
-      -webkit-appearance: none;
-      height: 25px; /* Specified height */
-      cursor: pointer;
-      background: #434343;
-      box-shadow: -100vw 0 0 100vw  #33b5e5;
-    }
 
+.section-steps {
+    background-color: #f4f4f4;
 }
-/** FF*/
-input[type="range"]::-moz-range-progress {
-  background-color: #33b5e5; 
+
+.steps-box {
+    margin-top: 30px;
 }
-input[type="range"]::-moz-range-track {  
-  background-color: #d3d3d3;
-}
-/* IE*/
-input[type="range"]::-ms-fill-lower {
-  background-color: #33b5e5; 
-}
-input[type="range"]::-ms-fill-upper {  
-  background-color: #d3d3d3;
-}    
-.input-text-fixer {
+
+
+.steps-box:first-child {
     text-align: right;
-}
-.input-text {
-    -webkit-rtl-ordering: logical;
-    text-align: right;
-    border: none;
-    border-bottom: 3px solid #33b5e5;
+    padding-right: 3%;
 }
 
-  .rs{ width: 60px;
-    color: #fff;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 3px;
-    background: #2c3e50;
-    padding: 5px 10px;
-    margin-left: 8px;
-  }
-  .rs::after {
-    position: absolute;
-    
-    width: 0;
-    height: 0;
-    border-top: 7px solid transparent;
-    border-right: 7px solid #2c3e50;
-    border-bottom: 7px solid transparent;
-    content: '';
-  }
-
-
-  .marker {
-    border: 1px solid transparent;
-    color: #333;
-    font-size: 9px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
-}       
-
-.tick {
-    color: #ccc;
-    font-size: 11px;
-    height: 11px;
-    left: 0;
-    line-height: 11px;
-    margin-left: -24px;
-    position: absolute;
-    text-align: center;
-    width: 48px;
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
 }
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #27b3e6;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #27b3e6;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* Animations */
+/* ----------------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
