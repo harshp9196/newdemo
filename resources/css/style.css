@@ -122,6 +122,11 @@ body.modal-open > :not(.modal) {
     background: #33b5e5;
 }
 
+
+
+
+
+
 /* ----------------------------------------------- */
 /* ONE PAge silder */
 /* ----------------------------------------------- */
@@ -130,6 +135,7 @@ body.modal-open > :not(.modal) {
 }
 .item img {
   height: 100vh !important;
+  width: 100vw !important;
 }
 
 /* Backgrounds will cover all the section

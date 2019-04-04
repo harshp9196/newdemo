@@ -28,6 +28,12 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    .logo {
+        margin: 0.1px 0.1px;
+        height: 105px ;
+        width: auto ;
+    }
+
     .modal-dialog {
         position: absolute;
         top: 4%;
@@ -68,13 +74,11 @@
     margin-left: 50px;
 }
 .sticky-nav-logo img {
-    margin-left: 125px;
+    margin-top: -15px;
+    margin-bottom: 8px;
+    margin-left: 75px;    
  }
-.logo {
-        height: 89px;
-        width: auto;
-        margin-top: 10px;
-    }
+
     .pg-1-all-text-1 {
         margin-bottom: 3.5px;
         font-size: 23px;
