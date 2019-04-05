@@ -7,17 +7,12 @@
 .control {
     position: relative;
     display: inline-block;
-   
     width: 8rem;
-   
     height: 2.7rem;
-   font-size: 80%;
+    font-size: 80%;
     cursor: pointer;
     -webkit-transition: background 150ms;
     transition: background 150ms;
-
-
-
     background-color: transparent;
     padding: 2px 0.1px;
     border: 1px solid transparent;
@@ -123,7 +118,13 @@
 
 /* Target Elements
 ---------------------------------------------------------------------- */
-
+.mix img {
+    z-index: 101;
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+}
 .mix,
 .gap {
     display: inline-block;
@@ -131,11 +132,11 @@
 }
 
 .mix {
-    background: rgb(202, 55, 55);
-    border-top: .5rem solid currentColor;
+    background: transparent;
     border-radius: 2px;
     margin-bottom: 1rem;
     position: relative;
+    transition: 0.7s;
 }
 
 .mix:before {
@@ -144,17 +145,6 @@
     padding-top: 56.25%;
 }
 
-.mix.green {
-    color: #91e6c7;
-}
-
-.mix.pink {
-    color: #d595aa;
-}
-
-.mix.blue {
-    color: #5ecdde;
-}
 
 /* Grid Breakpoints
 ---------------------------------------------------------------------- */
@@ -163,37 +153,69 @@
 
 .mix,
 .gap {
-    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
 }
 
-/* 3 Columns */
+.container :hover {
 
-@media screen and (min-width: 541px) {
-    .mix,
-    .gap {
-        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
-    }
+}
+.ongoing-span  {
+    height: 10px;
+    display: block;
+    position: absolute;
+  top:0;
+
+    text-align: left;
+    color: green;
+    background: #14c2da;
+}
+.type-shower {
+    color: aqua;
+    z-index: 9999; 
+    position: absolute;
+    background-color: green;
+    top: 0;
+    right: 0;
+    height: 10%;
+    width: 18%;
+transition: 0.8; }
+.type-shower p {
+    color: white;
+    height: 20px;
+    width: 100%;;
+    font-size: 15px;
+    text-align: right;
 }
 
-/* 4 Columns */
-
-@media screen and (min-width: 961px) {
-    .mix,
-    .gap {
-        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
-    }
+.type-shower-bottom {
+    z-index: 9999; 
+    position: absolute;
+    top:  50%;
+    left: 50;
+    right: 0;
+    height: 50%;
+    margin: auto;
+    width: 35%;
+    transform: translateX(-150%);
+}
+.type-shower-bottom p {
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
 }
 
-/* 5 Columns */
-
-@media screen and (min-width: 1281px) {
-    .mix,
-    /* .gap {
-        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
-    } */
-    .gap {
-        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
-    }
-}
 
 
+/*Button Logic + animations of the Btn*/  
+.button {
+    font-size: 15px;
+    height: 100%;
+    width: 100%;;
+    text-decoration: none;
+    background-color: #14c2da;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 6px 2px 6px;
+  }
