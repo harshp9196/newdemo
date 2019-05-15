@@ -122,3 +122,19 @@
     display: inline-block;
   }
   *:focus {outline: none;}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .list-link-left {
+    width: 100%;
+    margin-top: 60px;
+    max-height: calc(500vh - 100px);
+    overflow-y: auto;
+  }
+}
+
+
+
+

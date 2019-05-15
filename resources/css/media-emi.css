@@ -1,0 +1,12 @@
+h2::after{
+
+}
+html {
+    font-weight: 500;
+}
+.list-link-left {
+    width: 100%;
+    margin-top: 60px;
+    max-height: calc(50vh - 100px);
+    overflow-y: auto;
+  }
