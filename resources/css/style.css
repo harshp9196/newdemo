@@ -85,6 +85,11 @@ body.modal-open > :not(.modal) {
 .popup-footer {
     text-align: center;
 }
+.logo-container {
+  position: absolute;
+  top:0;
+  left: 0;
+}
 .popup-btn {
     color: white;
     font-size: 80% !important;
@@ -555,4 +560,7 @@ nav {
 .pg-2-all-text-1 {
   top: 65%;
   color: #ffffff;
+}
+.fixer-form iframe{
+  width: 50%
 }
