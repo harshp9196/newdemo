@@ -169,45 +169,6 @@
     color: green;
     background: #14c2da;
 }
-.type-shower {
-    color: aqua;
-    z-index: 9999; 
-    position: absolute;
-    background-color: green;
-    top: 0;
-    right: 0;
-    height: 10%;
-    width: 18%;
-transition: 0.8; }
-.type-shower p {
-    color: white;
-    height: 20px;
-    width: 100%;;
-    font-size: 15px;
-    text-align: right;
-}
-
-.type-shower-bottom {
-    z-index: 9999; 
-    position: absolute;
-    top:  50%;
-    left: 50;
-    right: 0;
-    height: 50%;
-    margin: auto;
-    width: 35%;
-    transform: translateX(-150%);
-}
-.type-shower-bottom p {
-    color: white;
-    height: 100%;
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-}
-
-
-
 /*Button Logic + animations of the Btn*/  
 .button {
     font-size: 15px;
