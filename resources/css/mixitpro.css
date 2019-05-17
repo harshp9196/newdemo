@@ -114,11 +114,12 @@
 
 /* Target Elements
 ---------------------------------------------------------------------- */
+
 .mix img {
   z-index: 101;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 150%;
   width: 100%;
 }
 .mix,
@@ -130,7 +131,7 @@
 .mix {
   background: transparent;
   border-radius: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
   position: relative;
   transition: 0.7s;
 }
@@ -141,36 +142,6 @@
   padding-top: 56.25%;
 }
 
-/* Grid Breakpoints
----------------------------------------------------------------------- */
-
-/* 2 Columns */
-
-.mix,
-.gap {
-  width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
-}
-@media only screen and (max-width: 580px) {
-  .mix {
-    width: 100% !important;
-  }
-  .controls {
-    padding: 1px;}
-}
-
-@media only screen and (max-width: 767px) {
-  .mix,
-  .gap {
-  }
-}
-@media only screen and (max-width: 960px) {
-  .mix,
-  .gap {
-    width: 50%;
-  }
-}
-.container :hover {
-}
 .ongoing-span {
   height: 10px;
   display: block;
@@ -191,4 +162,42 @@
   border-radius: 5px;
   color: white;
   padding: 2px 6px 2px 6px;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+/* 1 Columns */
+
+.mix,
+.gap {
+  width: calc(100% / 1 - (((1 - 1) * 1rem) / 1));
+}
+
+/* 2 Columns */
+
+/* 3 Columns */
+
+@media screen and (min-width: 541px) {
+  .mix,
+  .gap {
+    width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
+  }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+  .mix,
+  .gap {
+    width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
+  }
+}
+
+/* 5 Columns */
+
+@media screen and (min-width: 1281px) {
+  .mix,
+  .gap {
+    width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
+  }
 }

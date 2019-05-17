@@ -577,7 +577,6 @@ Images hover effect */
   overflow: hidden;
   top: 0;
   left: 0;
-  max-height: 340px;
 }
 .item-hover {
   position: absolute;
