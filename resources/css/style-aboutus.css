@@ -569,6 +569,7 @@ footer p {
   max-width: 100%;
   height: auto;
 }
+
 /* 
 Images hover effect */
 
@@ -603,10 +604,9 @@ Images hover effect */
   font-size: 15px;
 }
 .thumb-a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .hover-btn {
-  background: #00aced;
   z-index: 100;
   position: absolute;
   left: 0;
@@ -615,6 +615,51 @@ Images hover effect */
   width: 35px;
   transform: translate(150px, 90px);
 }
-.thumb-a:hover .hover-btn {
-  z-index: 200;
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.btn--white {
+  background-color: #36b2eb;
+  color: rgb(255, 255, 255);
+}
+.text-comtainer {
+  z-index: 999;
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 25px;
+  margin: 0 0;
+  text-align: center;
+  border: none;
+}
+.text-comtainer h3 {
+  opacity: 0;
+  z-index: 999;
+  margin: 0 0;
+  display: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 70%;
+  font-weight: 300;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 20px;
+  border: none;
+}
+.thumb-a:hover .text-comtainer-text {
+  opacity: 1;
 }
