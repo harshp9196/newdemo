@@ -25,6 +25,7 @@
 
 .control:hover {
   border-radius: 20px;
+  height: 5rem;
   border: 1px solid #55c57a;
 }
 
@@ -66,6 +67,7 @@
   font-weight: 180%;
   color: #55c57a;
   border-radius: 25px;
+  height: 5rem;
 }
 
 .mixitup-control-active[data-filter]:after {
