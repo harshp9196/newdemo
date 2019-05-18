@@ -73,8 +73,7 @@
 }
 
 .control:first-of-type {
-  padding: 0 0;
-  width: 3.5rem;
+  width: 8.5rem;
 }
 
 .control[data-filter] + .control[data-sort] {
@@ -124,7 +123,7 @@
 .mix {
   border-top: 0.5rem transparent currentColor;
   border-radius: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
   position: relative;
 }
 
@@ -210,16 +209,15 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-  .control:first-of-type {
-    padding: 0 0;
-    transform: translateX(-80px);
-    /* width: 3.5rem; */
-  }
-  .past-btn {
-    transform: translateX(-40px);
+  .controls {
+    margin: 1rem -7rem;
   }
 
-  .last-btn {
-    transform: translateX(20px);
+  .mix {
+    margin-bottom: 20rem;
+  }
+  .mix img {
+    height: 200%;
+    width: 100%;
   }
 }
