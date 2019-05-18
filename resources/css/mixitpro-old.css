@@ -2,21 +2,17 @@
   padding: 1rem;
   text-align: center;
   background: transparent;
-  border-bottom: 2 px transparent #55c57a;
 }
 
 .control {
   position: relative;
   display: inline-block;
-  width: 15%;
+  width: 8rem;
   height: 2.7rem;
-  font-size: 200%;
-  cursor: pointer;
   font-size: 80%;
+  cursor: pointer;
   -webkit-transition: background 150ms;
   transition: background 150ms;
-
-  border-bottom: 2px solid #55c57a;
   background-color: transparent;
   padding: 2px 0.1px;
   border: 1px solid transparent;
@@ -24,7 +20,7 @@
 }
 
 .control:hover {
-  border-radius: 20px;
+  border-radius: 25px;
   border: 1px solid #14c2da;
 }
 
@@ -64,7 +60,7 @@
   border: 1px solid #3e454d;
 
   border-radius: 2px;
-  font-weight: 180%;
+  font-weight: 120%;
   color: #5ecdde;
   border-radius: 25px;
 }
@@ -86,11 +82,11 @@
 }
 
 .control[data-filter=".green"] {
-  color: #55c57a;
+  color: #91e6c7;
 }
 
 .control[data-filter=".blue"] {
-  color: #55c57a;
+  color: #5ecdde;
 }
 
 .control[data-filter=".pink"] {
@@ -119,6 +115,13 @@
 /* Target Elements
 ---------------------------------------------------------------------- */
 
+.mix img {
+  z-index: 101;
+  position: absolute;
+  top: 0;
+  height: 150%;
+  width: 100%;
+}
 .mix,
 .gap {
   display: inline-block;
@@ -126,10 +129,11 @@
 }
 
 .mix {
-  border-top: 0.5rem transparent currentColor;
+  background: transparent;
   border-radius: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
   position: relative;
+  transition: 0.7s;
 }
 
 .mix:before {
@@ -138,34 +142,45 @@
   padding-top: 56.25%;
 }
 
-.mix.green {
-  color: #91e6c7;
-}
+.ongoing-span {
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
 
-.mix.pink {
-  color: #d595aa;
+  text-align: left;
+  color: green;
+  background: #14c2da;
 }
-
-.mix.blue {
-  color: #5ecdde;
+/*Button Logic + animations of the Btn*/
+.button {
+  font-size: 15px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  background-color: #14c2da;
+  border-radius: 5px;
+  color: white;
+  padding: 2px 6px 2px 6px;
 }
 
 /* Grid Breakpoints
 ---------------------------------------------------------------------- */
-
-/* 2 Columns */
+/* 1 Columns */
 
 .mix,
 .gap {
   width: calc(100% / 1 - (((1 - 1) * 1rem) / 1));
 }
 
+/* 2 Columns */
+
 /* 3 Columns */
 
 @media screen and (min-width: 541px) {
   .mix,
   .gap {
-    width: calc(100% / 1 - (((1 - 1) * 1rem) / 1));
+    width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
   }
 }
 
@@ -182,19 +197,9 @@
 
 @media screen and (min-width: 1281px) {
   .mix,
-    /* .gap {
-        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
-    } */
-    .gap {
+  .gap {
     width: calc(100% / 3 - (((3 - 1) * 1rem) / 3));
   }
-}
-
-.mix img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
 }
 
 /* 
@@ -219,8 +224,10 @@
     padding: 0.1rem;
   }
   .control {
+   
     height: 2.5rem;
     font-size: 80%;
     width: 5rem;
   }
+
 }
